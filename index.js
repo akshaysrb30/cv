@@ -1,4 +1,4 @@
-document.querySelectorAll('h1')[0].innerHTML="john Doe";
+// document.querySelectorAll('h1')[0].innerHTML="john Doe";
 
 function initializeSDK() {
     window.XmBindId.initialize({
@@ -7,14 +7,4 @@ function initializeSDK() {
     }).then(res => {
         alert('SDK Initialized');
     });
-}
-
-function invokeBindId() {
-    window.XmBindId.authenticate({
-        redirectUri: 'https://akshaysrb30.github.io/cv/'
-    }).then(res => {
-        onSuccess(res);
-    }, err => {
-        onFailure(err);
-    })
 }
