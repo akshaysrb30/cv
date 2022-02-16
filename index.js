@@ -9,6 +9,19 @@ function initializeSDK() {
     });
 }
 
-intializeSDK();
+initializeSDK();
 
 
+function invokeBindId() {
+    window.XmBindId.authenticate({
+        redirectUri: 'https://akshaysrb30.github.io/cv/',
+        scope: [window.XmBindId.XmBindIdScopeType.Phone, window.XmBindId.XmBindIdScopeType.Email],
+        verifications: [window.XmBindId.XmRequiredVerifications.Phone, window.XmBindId.XmRequiredVerifications.Email],
+    }).then(res => {
+        onSuccess(res);
+    }, err => {
+        onFailure(err);
+    })
+}
+
+authenticate();
