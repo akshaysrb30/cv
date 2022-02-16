@@ -8,3 +8,5 @@ function initializeSDK() {
         alert('SDK Initialized');
     });
 }
+
+intializeSDK();
