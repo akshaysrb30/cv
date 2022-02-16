@@ -1,6 +1,6 @@
 // document.querySelectorAll('h1')[0].innerHTML="john Doe";
 
-initializeSDK();
+
 
 function initializeSDK() {
     window.XmBindId.initialize({
