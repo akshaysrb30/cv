@@ -1,6 +1,6 @@
 // document.querySelectorAll('h1')[0].innerHTML="john Doe";
 
-function initializeSDK() {
+object.onload = function initializeSDK() {
     window.XmBindId.initialize({
         clientId: '9e96904e.3255a2cc.tid_5a1cbf13.bindid.io',
         apiCompat: window.XmBindId.XmBindIdApiCompatibilityLevel.UseLatest
@@ -12,7 +12,7 @@ function initializeSDK() {
 initializeSDK();
 
 
-function invokeBindId() {
+object.onload = function invokeBindId() {
     window.XmBindId.authenticate({
         redirectUri: 'https://akshaysrb30.github.io/cv/',
         scope: [window.XmBindId.XmBindIdScopeType.Phone, window.XmBindId.XmBindIdScopeType.Email],
