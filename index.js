@@ -1,5 +1,7 @@
 // document.querySelectorAll('h1')[0].innerHTML="john Doe";
 
+initializeSDK();
+
 document.getElementById("test").onload = function initializeSDK() {
     window.XmBindId.initialize({
         clientId: '9e96904e.3255a2cc.tid_5a1cbf13.bindid.io',
@@ -9,7 +11,7 @@ document.getElementById("test").onload = function initializeSDK() {
     });
 }
 
-initializeSDK();
+
 
 
 
