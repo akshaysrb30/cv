@@ -11,6 +11,15 @@ function initializeSDK() {
 }
 
 
+function invokeBindId() {
+    window.XmBindId.authenticate({
+        redirectUri: 'https://akshaysrb30.github.io/cv/'
+    }).then(res => {
+        onSuccess(res);
+    }, err => {
+        onFailure(err);
+    })
+}
 
 
 
