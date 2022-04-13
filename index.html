@@ -5,24 +5,28 @@
   <meta charset="utf-8">
   <title>Akshay's Personal Site</title>
  <!--
+Below includes 
+invoking the external java script file 
+invoking the BindID SDK 
+passing clientID and redirectURI as meta tags
+  -->
   <script src="index.js"></script>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CPromise.prototype.finally%2CTextDecoder%2CTextEncoder%2CObject.entries"></script>
   <script src="https://signin.bindid-sandbox.io/bindid-sdk/transmit-bind-id-sdk.js" defer></script>
   
   <meta name="xm-bind-id-client_id" content="f634b341.e782e78f.tid_d166180a.bindid.io">
   <meta name="xm-bind-id-redirect_uri" content="https://akshaysrb30.github.io/cv/">
-  <meta name="xm-bind-id-other_login_options" content="title=more ways to verify;url=https://akshaysrb30.github.io/cv/">
-  
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CPromise.prototype.finally%2CTextDecoder%2CTextEncoder%2CObject.entries"></script>
-  <script src="https://signin.bindid-sandbox.io/bindid-sdk/transmit-bind-id-sdk.js" defer></script>
-  -->
+
 </head>
 
 <body>
  
   <h1> Landing Page </h1>
   
+  <!--
+The button tag includes the button class provided by BindID
+-->
   <button class='xm-bind-id-button'>Biometric Login</button>
   
   </body>
